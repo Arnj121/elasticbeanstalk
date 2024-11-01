@@ -1,0 +1,7 @@
+1) do `git init` and all
+2) create Dockerrun.aws.json
+3) build the docker image
+4) authenticate to ecr `docker login -u AWS -p $(aws ecr get-login-password --region us-east-1) <id>.dkr.ecr.us-east-1.amazonaws.com`
+5) do `docker tag <imgid> <id>.dkr.ecr.us-east-1.amazonaws.com/<ecrname>` 
+6) do `docker push <imgid> <id>.dkr.ecr.us-east-1.amazonaws.com/<ecrname>`
+7) do `eb create`
