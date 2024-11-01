@@ -1,0 +1,12 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "851725471730.dkr.ecr.us-east-1.amazonaws.com/awsebdocker"
+  },
+  "PORTS": [
+    {
+      "ContainerPort": 5000,
+      "HostPort": 5000
+    }
+  ]
+}
