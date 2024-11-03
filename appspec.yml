@@ -5,7 +5,7 @@ files:
     destination: /home/ec2-user/app
 hooks:
   BeforeInstall:
-    - location: scripts/install_node.sh
+    - location: install_node.sh
       timeout: 60
       runas: root
     - location: scripts/install_dependencies.sh
