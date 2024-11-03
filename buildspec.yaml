@@ -5,6 +5,10 @@ phases:
     runtime-versions:
       nodejs: 20
     commands:
+      - echo "installing nodejs"
+      - sudo su
+      - yum install nodejs -y
+      - node -v
       - echo "Installing dependencies"
       - npm install
   build:
