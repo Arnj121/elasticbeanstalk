@@ -8,10 +8,10 @@ hooks:
     - location: install_node.sh
       timeout: 60
       runas: root
+  AfterInstall:
     - location: install_dependencies.sh
       timeout: 60
       runas: root
-
   ApplicationStart:
     - location: start_app.sh
       timeout: 300
